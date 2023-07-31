@@ -72,6 +72,27 @@ app.get("/lectures", (req, res) => {
   });
 });
 
+app.post("/lectures", (req, res) => {
+  let newData = req.body;
+  // res.send("data received");
+  console.log(newData);
+  fs.readFile("./db.json", "utf-8", (err, data) => {
+    if (err) {
+      return res.send("Something went wrong");
+    }
+    let parseData = JSON.parse(data);
+    parseData.lectures.push(newData);
+    let updatedData = JSON.stringify(parseData);
+
+    fs.writeFile("./db.json", updatedData,(err) => {
+      if (err) {
+        return res.send("Error while writing");
+      }
+      res.send("Data updated successfully");
+    });
+  });
+});
+
 app.listen(8000, () => {
   console.log("listening on port 8000");
 });

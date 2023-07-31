@@ -1,22 +1,12 @@
 {
   "lectures": [
-    {
-      "id": 1,
-      "name": "JS"
-    },
-    {
-      "id": 2,
-      "name": "DSA"
-    }
+    { "id": 1, "name": "JS" },
+    { "id": 2, "name": "DSA" },
+    { "id": 3, "name": "CSBT" },
+    { "id": 4, "name": "REACT" }
   ],
   "instructor": [
-    {
-      "id": 1,
-      "name": "Nihal"
-    },
-    {
-      "id": 2,
-      "name": "Ankush"
-    }
+    { "id": 1, "name": "Nihal" },
+    { "id": 2, "name": "Ankush" }
   ]
 }
