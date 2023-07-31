@@ -1,0 +1,22 @@
+{
+  "lectures": [
+    {
+      "id": 1,
+      "name": "JS"
+    },
+    {
+      "id": 2,
+      "name": "DSA"
+    }
+  ],
+  "instructor": [
+    {
+      "id": 1,
+      "name": "Nihal"
+    },
+    {
+      "id": 2,
+      "name": "Ankush"
+    }
+  ]
+}
